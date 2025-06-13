@@ -211,7 +211,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/textsum.png"), // Add appropriate image
+      image: require("./assets/images/text_sum.png"), // Add appropriate image
       projectName: "Graph-Based Extractive Summarization",
       projectDesc: "Leveraged S-BERT embeddings and PageRank to optimize summary coherence for my dissertation project.",
       footerLink: [
@@ -260,21 +260,14 @@ const achievementSection = {
   ],
   display: true
 };
-// Blog Section (you can add later when you have content)
-const blogSection = {
-  title: "Blogs",
-  subtitle: "I plan to share my learnings about data science and Python development",
-  displayMediumBlogs: "false",
-  blogs: [],
-  display: false
-};
+
 
 // Contact Info
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Interested in discussing data analysis, Python projects, or potential opportunities? Feel free to reach out!",
   number: "", // Add your phone number if desired
-  email_address: "" // Add your email
+  email_address: "titarenkoviktoria16@gmail.com" // Add your email
 };
 
 
@@ -292,10 +285,10 @@ const resumeSection = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -309,7 +302,6 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
   contactInfo,
   twitterDetails,
   isHireable,
