@@ -3,13 +3,13 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import catAnimation from "./assets/lottie/cat_animation.json"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
+  animation: catAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
 
@@ -21,12 +21,12 @@ const illustration = {
 
 const greeting = {
   username: "Viktoriia Tytarenko",
-  title: "Hi all, I'm Viktoriia",
+  title: "Hi, I'm Viktoriia",
   subTitle: emoji(
      "A passionate Data Analyst and Python Developer 🚀 with expertise in machine learning, database optimization, and behavioral science-driven products. I love transforming data into actionable insights through analysis and visualization."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/16jRTeuOfzscqqwQEvUbgYv7ojokLG1nY/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,10 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/Toressy",
   linkedin: "https://www.linkedin.com/in/viktoriiatytarenko/",
   gmail: "titarenkoviktoria16@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  kaggle: "https://www.kaggle.com/toressy",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -206,7 +203,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "View Code",
-          url: "" // Add GitHub link when available
+          url: "https://www.kaggle.com/code/toressy/diabetes-prediction" // Add GitHub link when available
         }
       ]
     },
@@ -217,7 +214,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "View Code",
-          url: "" // Add GitHub link when available
+          url: "https://github.com/Toressy/GraphSummariser-TransformerHybrid" // Add GitHub link when available
         }
       ]
     },
@@ -228,7 +225,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "View Code",
-          url: "" // Add GitHub link when available
+          url: "https://github.com/Toressy/AirplaneFleetDatabase" // Add GitHub link when available
         }
       ]
     }
@@ -258,7 +255,7 @@ const achievementSection = {
       footerLink: []
     }
   ],
-  display: true
+  display: false
 };
 
 
@@ -266,7 +263,7 @@ const achievementSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Interested in discussing data analysis, Python projects, or potential opportunities? Feel free to reach out!",
-  number: "", // Add your phone number if desired
+  number: "+447551500688", // Add your phone number if desired
   email_address: "titarenkoviktoria16@gmail.com" // Add your email
 };
 
@@ -280,13 +277,6 @@ const resumeSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-
-// Twitter Section
-
-const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
-};
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
@@ -303,7 +293,6 @@ export {
   bigProjects,
   achievementSection,
   contactInfo,
-  twitterDetails,
   isHireable,
   resumeSection
 };
