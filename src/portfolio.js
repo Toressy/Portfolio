@@ -282,7 +282,7 @@ const achievementSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Interested in discussing data analysis, Python projects, or potential opportunities? Feel free to reach out!",
-  number: "+447551500688", // Add your phone number if desired
+  // number: "+447551500688", // Add your phone number if desired
   email_address: "titarenkoviktoria16@gmail.com" // Add your email
 };
 
