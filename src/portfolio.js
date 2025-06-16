@@ -46,26 +46,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DATA SCIENTIST AND FULL-STACK DEVELOPER SPECIALIZING IN ML, NLP, AND DATABASES",
   skills: [
     emoji("⚡ Build machine learning pipelines with high accuracy (99.64% on diabetes prediction)"),
-    emoji("⚡ Design and optimize relational databases "),
+    emoji("⚡ Design and optimize relational databases (SQL, NoSQL)"),
     emoji("⚡ Develop custom programming languages and interpreters in Python"),
     emoji("⚡ Implement NLP solutions using transformers (BERT, SBERT) and graph algorithms")
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
-    // Programming Languages
+    // ===== Programming Languages =====
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "sql",
-      fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "c++",
@@ -75,20 +68,38 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "javascript",
       fontAwesomeClassname: "fab fa-js"
     },
-    // Data Science/ML
+    {
+      skillName: "c-sharp",
+      fontAwesomeClassname: "fab fa-microsoft"  // For C# (Unity)
+    },
+    {
+      skillName: "sql",
+      fontAwesomeClassname: "fas fa-database"
+    },
+
+    // ===== Data Science & ML =====
     {
       skillName: "pandas",
-      fontAwesomeClassname: "fas fa-table"
+      fontAwesomeClassname: "fas fa-table"  // Alternative: "fas fa-chart-line"
+    },
+    {
+      skillName: "numpy",
+      fontAwesomeClassname: "fas fa-calculator"
     },
     {
       skillName: "scikit-learn",
-      fontAwesomeClassname: "fas fa-brain"
+      fontAwesomeClassname: "fas fa-robot"  // Better than "fa-brain" (ML-focused)
     },
     {
       skillName: "tensorflow",
-      fontAwesomeClassname: "fas fa-project-diagram"
+      fontAwesomeClassname: "fas fa-network-wired"  // Represents neural networks
     },
-    // Tools & Platforms
+    {
+      skillName: "huggingface",
+      fontAwesomeClassname: "fas fa-language"  // For NLP/transformers
+    },
+
+    // ===== Tools & Platforms =====
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
@@ -104,6 +115,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "unity",
       fontAwesomeClassname: "fas fa-gamepad"
+    },
+    {
+      skillName: "directx",
+      fontAwesomeClassname: "fas fa-cube"  // For 3D/graphics (DirectX)
     }
   ],
   display: true
@@ -219,13 +234,17 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/database.png"), // Add appropriate image
-      projectName: "Enterprise Database System",
-      projectDesc: "Designed a normalized database (3NF) with E/R diagrams, SQL scripts, and a functional MS Access front-end.",
+      image: require("./assets/images/compiler.png"), // Add appropriate image
+      projectName: "Custom Python-Based Compiler",
+      projectDesc: "Designed and implemented a programming language from scratch, including lexer, parser, and interpreter in Python.",
       footerLink: [
         {
           name: "View Code",
-          url: "https://github.com/Toressy/AirplaneFleetDatabase" // Add GitHub link when available
+          url: "https://github.com/Toressy/Interpreter-100661485" // Add GitHub link when available
+        },
+        {
+          name: "Live Demo", // New link for the live demo
+          url: "https://interpreter-3e9n.onrender.com/"
         }
       ]
     }
