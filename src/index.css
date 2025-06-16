@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "Agustina Regular";
+  font-family: "Dream Place";
   font-style: normal;
   font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
+  src: local("Dream Place"),
+    url("./assets/fonts/Dream\ Place.otf") format("woff");
   font-display: swap;
 }
 @font-face {
